@@ -1,0 +1,183 @@
+{
+	"commands": {
+		"common": {
+			"warning-prefix": "[警告] ",
+			"invalid-sender": "このコマンドはプレーヤーとしてのみ実行できます。",
+			"no-permission": "このコマンドを実行する権限がありません。"
+		},
+		"brush": {
+			"description": "BlockSniperのGUIを開きます。",
+			"need-item": "You can only bind a brush to an item.",
+			"bind-brush-item": "You cannot bind the brush item",
+			"clear-success": "Successfully cleared all brushes from this item.",
+			"not-bound": "There was no brush bound to this item."
+		},
+		"blocksniper": {
+			"description": "BlockSniperに関する情報を表示するか、プラグインをリロードします。",
+			"info": "情報",
+			"version": "バージョン: ",
+			"organisation": "構成: ",
+			"authors": "作者: ",
+			"target-api": "対象のAPI: ",
+			"reload": "BlockSniperを再読み込みしています..."
+		},
+		"redo": {
+			"description": "最後に取り消したBlockSniperの修正をやり直します。",
+			"no-redo": "変更は見つかりませんでした。",
+			"success": "最後に取り消した変更を正常に再作成しました。"
+		},
+		"undo": {
+			"description": "最後のBlockSniperの変更を元に戻します。",
+			"no-undo": "変更は見つかりませんでした。",
+			"success": "最後の変更を正常に終了しました。"
+		},
+		"clone": {
+			"description": "指定された形式を使用して領域をクローンします。",
+			"copy": {
+				"success": "選択範囲を正常にコピーしました。"
+			},
+			"schematic": {
+				"missing-name": "回路図には有効な名前はありません。",
+				"success": "%sに回路図のファイルを保存しました。"
+			}
+		},
+		"paste": {
+			"description": "前にクローンされた領域をワールドに貼り付けます。",
+			"copy": {
+				"no-copies": "コピーが見つかりませんでした。",
+				"success": "選択範囲にコピーを貼り付けました。"
+			},
+			"schematic": {
+				"nonexistent": "回路図ディレクトリ%sが回路図ディレクトリに見つかりませんでした。",
+				"success": "Pasting the schematic %s on the location looked at."
+			}
+		},
+		"deselect": {
+			"description": "It deselect the current selection.",
+			"success": "Successfully deselected your selection."
+		}
+	},
+	"ui": {
+		"main-menu": {
+			"title": "BlockSniperメニュー",
+			"subtitle": "続行するにはボタンをクリックしてください",
+			"brush": "ブラシ",
+			"tree": "Tree",
+			"config": "設定",
+			"exit": "終了"
+		},
+		"brush-menu": {
+			"title": "ブラシメニュー",
+			"size": "大きさ",
+			"shape": "形",
+			"type": "種類",
+			"mode": {
+				"description": "Brush Mode",
+				"brush": "Brush",
+				"selection": "Selection"
+			},
+			"hollow": "空洞",
+			"decrement": "デクリメント",
+			"height": "高さ",
+			"width": "Brush Width",
+			"length": "Brush Length",
+			"blocks": "使用するブロック",
+			"obsolete": "使用しないブロック",
+			"biome": "バイオーム",
+			"tree": "木",
+			"layer-width": "Layer Width",
+			"name": "Brush Name",
+			"soil": "Soil Blocks"
+		},
+		"configuration-menu": {
+			"title": "BlockSniper 設定",
+			"language": "BlockSniperのメッセージ送信に使用する言語",
+			"brush-item": "ブラシに使用するアイテムのID",
+			"selection-item": "Item ID of the item that is used to select",
+			"max-brush-size": "ブラシの最大サイズ",
+			"min-async-size": "非同期ブラシサイズの制限。ブラシのサイズがこれより大きい場合、操作は非同期に実行されます。",
+			"max-reverts": "やり直しの保存の最大量。古いものは自動的に削除されます。",
+			"reset-decrement-brush": "デクリメントのブラシを初期開始サイズに自動的にリセットする",
+			"save-brush": "サーバーの再起動時にプレイヤーのブラシ設定を保存する。",
+			"session-timeout-time": "The time in minutes after which the session of a player is removed after leaving the server",
+			"auto-gui": "ホット・バー・スロットをブラシ項目を含むものに切り替えるときに、GUIを自動的に開きます。",
+			"cooldown": "The cooldown in seconds (can be decimal) until the brush can be re-used after using it",
+			"myplot-support": "Whether to turn on MyPlot support or not"
+		},
+		"tree-menu": {
+			"title": "Tree Menu",
+			"trunk-height": "The height of the trunk of the tree",
+			"trunk-width": "The width of the tree at the bottom; The width decreases gradually upwards",
+			"max-branch-length": "The maximum length one of the branches of the tree can extend",
+			"trunk-blocks": "The blocks to use for the trunk of the tree",
+			"leaves-blocks": "The blocks to use for the leaves of the tree",
+			"leaves-cluster-size": "The size of the leaves cluster at the end of each branch"
+		},
+		"changelog": {
+			"title": "Changelog Menu",
+			"name": "Changelog",
+			"subtitle": "Click a version to view its changelog.",
+			"close": "Close",
+			"see-other": "See other changelogs"
+		}
+	},
+	"log": {
+		"language": {
+			"auto-selected": "有効な言語が選択されていません。英語が自動的に選択されました。",
+			"usage": "/bを使用して、ゲーム内の設定タブに移動して言語を選択してください。",
+			"selected": "選択した言語："
+		},
+		"brush": {
+			"restored": "プレーヤー%sのブラシが復元されました。",
+			"all-restored": "すべてのブラシが復元されました。"
+		},
+		"reload": {
+			"start": "再読み込みしています...",
+			"finish": "再読み込みが完了しました。"
+		}
+	},
+	"brush": {
+		"state": {
+			"ready": "Ready",
+			"done": "Done"
+		},
+		"selection": {
+			"first": "Position 1 set to:",
+			"second": "Position 2 set to:",
+			"error": "Set your selection using the selection item before doing this action."
+		},
+		"shape": {
+			"cube": "立方体",
+			"cuboid": "直方体",
+			"sphere": "球体",
+			"cylinder": "円柱",
+			"ellipsoid": "Ellipsoid"
+		},
+		"type": {
+			"biome": "バイオーム",
+			"cleanentities": "エンティティ削除",
+			"clean": "削除",
+			"drain": "Drain",
+			"expand": "拡大",
+			"fill": "埋める",
+			"flattenall": "全てを平らにする",
+			"flatten": "平らにする",
+			"layer": "レイヤー",
+			"leafblower": "葉を吹き飛ばす",
+			"melt": "溶かす",
+			"overlay": "オーバーレイ",
+			"replaceall": "全て置き換える",
+			"replace": "置き換える",
+			"snowcone": "スノーコーン",
+			"toplayer": "上のレイヤー",
+			"tree": "木",
+			"regenerate": "Regenerate",
+			"freeze": "Freeze",
+			"warm": "Warm",
+			"heat": "Heat",
+			"smooth": "Smooth",
+			"replacetarget": "Replace Target",
+			"plant": "Plant"
+		}
+	}
+}

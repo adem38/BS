@@ -1,0 +1,182 @@
+{
+	"commands": {
+		"common": {
+			"warning-prefix": "[警告] ",
+			"invalid-sender": "你只能在游戏中执行这条指令。",
+			"no-permission": "你没有权限执行这条指令。"
+		},
+		"brush": {
+			"description": "打开 BlockSniper 图形界面。",
+			"need-item": "You can only bind a brush to an item.",
+			"bind-brush-item": "You cannot bind the brush item",
+			"clear-success": "Successfully cleared all brushes from this item.",
+			"not-bound": "There was no brush bound to this item."
+		},
+		"blocksniper": {
+			"description": "显示 BlockSniper 的相关信息，或重新加载插件。",
+			"info": "信息",
+			"version": "版本: ",
+			"organisation": "组织: ",
+			"authors": "作者: ",
+			"target-api": "目标 API: ",
+			"reload": "正在重新加载 BlockSniper..."
+		},
+		"redo": {
+			"description": "恢复上一次 BlockSniper 撤销的操作。",
+			"no-redo": "没有可以被恢复的操作。",
+			"success": "成功恢复上一次撤销的操作。"
+		},
+		"undo": {
+			"description": "撤销上一次 BlockSniper 的操作。",
+			"no-undo": "没有可以被撤销的操作。",
+			"success": "成功撤销上一次操作。"
+		},
+		"clone": {
+			"description": "以指定格式克隆一个区域。",
+			"copy": {
+				"success": "成功复制你看向的位置。"
+			},
+			"schematic": {
+				"missing-name": "没有为概要指定有效的名称。",
+				"success": "成功存储概要文件至 %s."
+			}
+		},
+		"paste": {
+			"description": "粘贴一个已克隆的区域到世界中。",
+			"copy": {
+				"no-copies": "没有可以被粘贴的复制样本。",
+				"success": "成功粘贴复制样本至你看向的位置。"
+			},
+			"schematic": {
+				"nonexistent": "无法在概要目录中找到 %s 概要。",
+				"success": "Pasting the schematic %s on the location looked at."
+			}
+		},
+		"deselect": {
+			"description": "It deselect the current selection.",
+			"success": "Successfully deselected your selection."
+		}
+	},
+	"ui": {
+		"main-menu": {
+			"title": "BlockSniper 菜单",
+			"subtitle": "点击一个按钮以继续",
+			"brush": "画笔选项",
+			"config": "设置",
+			"exit": "退出"
+		},
+		"brush-menu": {
+			"title": "画笔选项",
+			"size": "大小",
+			"shape": "形状",
+			"type": "操作类型",
+			"mode": {
+				"description": "Brush Mode",
+				"brush": "Brush",
+				"selection": "Selection"
+			},
+			"hollow": "不填充内部",
+			"decrement": "尺寸递减",
+			"height": "高度",
+			"width": "Brush Width",
+			"length": "Brush Length",
+			"blocks": "目标方块",
+			"obsolete": "替换方块",
+			"biome": "生物群落",
+			"tree": "树木类型",
+			"layer-width": "Layer Width",
+			"name": "Brush Name",
+			"soil": "Soil Blocks"
+		},
+		"configuration-menu": {
+			"title": "BlockSniper 设置",
+			"language": "BlockSniper 相关信息使用的语言",
+			"brush-item": "画笔物品 ID",
+			"selection-item": "Item ID of the item that is used to select",
+			"max-brush-size": "画笔绝对大小上限",
+			"min-async-size": "异步画笔操作大小限制。如果画笔大小高于这个数值，操作将被异步执行",
+			"max-reverts": "撤销/恢复操作最大保存数量。更早的操作将被自动清理",
+			"reset-decrement-brush": "自动重置尺寸递减至最初值",
+			"save-brush": "服务器重启时保存用户画笔数据",
+			"session-timeout-time": "The time in minutes after which the session of a player is removed after leaving the server",
+			"auto-gui": "切换到画笔物品栏时自动打开画笔图形界面",
+			"cooldown": "The cooldown in seconds (can be decimal) until the brush can be re-used after using it",
+			"myplot-support": "是否启用 MyPlot 支持"
+		},
+		"tree-menu": {
+			"title": "Tree Menu",
+			"trunk-height": "The height of the trunk of the tree",
+			"trunk-width": "The width of the tree at the bottom; The width decreases gradually upwards",
+			"max-branch-length": "The maximum length one of the branches of the tree can extend",
+			"trunk-blocks": "The blocks to use for the trunk of the tree",
+			"leaves-blocks": "The blocks to use for the leaves of the tree",
+			"leaves-cluster-size": "The size of the leaves cluster at the end of each branch"
+		},
+		"changelog": {
+			"title": "Changelog Menu",
+			"name": "Changelog",
+			"subtitle": "Click a version to view its changelog.",
+			"close": "Close",
+			"see-other": "See other changelogs"
+		}
+	},
+	"log": {
+		"language": {
+			"auto-selected": "No valid language has been selected. English has been auto selected.",
+			"usage": "请到游戏中设置页面使用 /b 选择语言。",
+			"selected": "已选择语言: "
+		},
+		"brush": {
+			"restored": "玩家 %s 的画笔已被恢复。",
+			"all-restored": "所有的画笔已被恢复。"
+		},
+		"reload": {
+			"start": "重新加载中...",
+			"finish": "已重新加载。"
+		}
+	},
+	"brush": {
+		"state": {
+			"ready": "Ready",
+			"done": "Done"
+		},
+		"selection": {
+			"first": "Position 1 set to:",
+			"second": "Position 2 set to:",
+			"error": "Set your selection using the selection item before doing this action."
+		},
+		"shape": {
+			"cube": "立方体",
+			"cuboid": "长方体",
+			"sphere": "球体",
+			"cylinder": "圆柱体",
+			"ellipsoid": "Ellipsoid"
+		},
+		"type": {
+			"biome": "生物群落",
+			"cleanentities": "清除实体",
+			"clean": "清理",
+			"drain": "清除液体",
+			"expand": "地形扩展",
+			"fill": "填充",
+			"flattenall": "高级扁平化",
+			"flatten": "扁平化",
+			"layer": "铺设",
+			"leafblower": "清除植物",
+			"melt": "熔化",
+			"overlay": "覆盖",
+			"replaceall": "全部替换",
+			"replace": "替换",
+			"snowcone": "降雪",
+			"toplayer": "顶层",
+			"tree": "树木",
+			"regenerate": "Regenerate",
+			"freeze": "Freeze",
+			"warm": "Warm",
+			"heat": "Heat",
+			"smooth": "Smooth",
+			"replacetarget": "Replace Target",
+			"plant": "Plant"
+		}
+	}
+}

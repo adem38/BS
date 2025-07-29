@@ -1,0 +1,176 @@
+{
+	"commands": {
+		"common": {
+			"warning-prefix": "[Aviso] ",
+			"invalid-sender": "Solo puedes ejecutar este comando como jugador.",
+			"no-permission": "No tienes permiso para ejecutar este comando."
+		},
+		"brush": {
+			"description": "Abre la GUI para BlockSniper.",
+			"need-item": "You can only bind a brush to an item.",
+			"bind-brush-item": "You cannot bind the brush item",
+			"clear-success": "Successfully cleared all brushes from this item.",
+			"not-bound": "There was no brush bound to this item."
+		},
+		"blocksniper": {
+			"description": "Muestra información sobre BlockSniper, o reinicia el plugin.",
+			"info": "Información",
+			"version": "Versioó: ",
+			"organisation": "Organización: ",
+			"authors": "Autores: ",
+			"target-api": "API Objetivo: ",
+			"reload": "Reiniciando BlockSniper..."
+		},
+		"redo": {
+			"description": "Rehace la última modificación de BlockSniper no terminada.",
+			"no-redo": "No se encontraron modificaciones para rehacer.",
+			"success": "Has rehecho la última modificación correctamente."
+		},
+		"undo": {
+			"description": "Deshace la última modificación de BlockSniper.",
+			"no-undo": "No se encontraron modificaciones para deshacer.",
+			"success": "Has deshecho la última modificación correctamente."
+		},
+		"clone": {
+			"description": "Clona un área usando el formato especificado.",
+			"copy": {
+				"success": "Copió con éxito la ubicación examinada."
+			},
+			"schematic": {
+				"missing-name": "No se ha dado un nombre válido para la schematic.",
+				"success": "Se he guardo correctamente un archivo de schematic en %s."
+			}
+		},
+		"paste": {
+			"description": "Pega un área previamente clonada en el mundo.",
+			"copy": {
+				"no-copies": "No se encontró ninguna copia para pegar.",
+				"success": "Se ha pegado correctamente la copia examinada."
+			},
+			"schematic": {
+				"nonexistent": "La schematic %s no pudo ser encontrada en el directorio de schematics.",
+				"success": "Pasting the schematic %s on the location looked at."
+			}
+		},
+		"deselect": {
+			"description": "It deselect the current selection.",
+			"success": "Successfully deselected your selection."
+		}
+	},
+	"ui": {
+		"main-menu": {
+			"title": "Menú de BlockSniper",
+			"subtitle": "Pulsa un botón para continuar",
+			"brush": "Brocha",
+			"config": "Configuración",
+			"exit": "Salir"
+		},
+		"brush-menu": {
+			"title": "Menú de creación de Predefinidos",
+			"size": "Tamaño de Brocha",
+			"shape": "Forma de Brocha",
+			"type": "Tipo de Brocha",
+			"mode": {
+				"description": "Brush Mode",
+				"brush": "Brush",
+				"selection": "Selection"
+			},
+			"hollow": "Brocha Hueca",
+			"decrement": "Decrementar Brocha",
+			"height": "Altura de Brocha",
+			"width": "Brush Width",
+			"length": "Brush Length",
+			"blocks": "Bloques de la Brocha",
+			"obsolete": "Bloques Obsoletos",
+			"biome": "Bioma de Brocha",
+			"tree": "Árbol de Brocha",
+			"layer-width": "Layer Width",
+			"name": "Brush Name",
+			"soil": "Soil Blocks"
+		},
+		"configuration-menu": {
+			"title": "Configuración de BlockSniper",
+			"language": "Idioma para enviar mensajes relacionados con BlockSniper",
+			"brush-item": "El ID del objeto usado para la brocha",
+			"max-brush-size": "El tamaño máximo de una brocha",
+			"min-async-size": "Tamaño límite para brochas asincrónicas. Si el tamaño de una brocha es superior, las operaciones se ejecutaran asincrónicamente",
+			"max-reverts": "Máxima cantida de Deshacer/Rehacer para guardar. Los antiguos son limpiados automáticamente",
+			"reset-decrement-brush": "Resetear automáticamente la brocha decreciente al tamaño inicial.",
+			"save-brush": "Guardar las propiedades de las brochsa de los jugadores en el reinicio del servidor",
+			"session-timeout-time": "El tiempo en minutos después del cual la sesión de un jugador es eliminada después de salir del servidor",
+			"auto-gui": "Abrir automáticamente la GUI cuando cambie a una ranura de la barra que contenga el objeto del broche",
+			"cooldown": "The cooldown in seconds (can be decimal) until the brush can be re-used after using it",
+			"myplot-support": "Activar o no el soporte de MyPlot"
+		},
+		"tree-menu": {
+			"title": "Menú de Árboles",
+			"trunk-height": "La altura del tronco del árbol",
+			"trunk-width": "El ancho del árbol en la parte inferior; El ancho disminuye gradualmente hacia arriba.",
+			"max-branch-length": "La longitud máxima que una de las ramas del árbol puede extenderse",
+			"trunk-blocks": "Los bloques a utilizar para el tronco del árbol",
+			"leaves-blocks": "Los bloques a utilizar para las hojas del árbol",
+			"leaves-cluster-size": "El tamaño de las hojas que agrupan al final de cada rama"
+		},
+		"changelog": {
+			"title": "Changelog Menu",
+			"name": "Changelog",
+			"subtitle": "Click a version to view its changelog.",
+			"close": "Close",
+			"see-other": "See other changelogs"
+		}
+	},
+	"log": {
+		"language": {
+			"auto-selected": "No se ha seleccionado un lenguaje válido. El Español ha sido seleccionado automáticamente.",
+			"usage": "Por favor, selecciona una lenguaje yendo a la venta de configuración en el juego, usando /b.",
+			"selected": "Idioma seleccionado: "
+		},
+		"brush": {
+			"restored": "La brocha del jugador %s ha sido reestablecida.",
+			"all-restored": "Todas las brochas han sido reestablecidas."
+		},
+		"reload": {
+			"start": "Reiniciando...",
+			"finish": "Reinicio terminado."
+		}
+	},
+	"brush": {
+		"state": {
+			"ready": "Ready",
+			"done": "Done"
+		},
+		"shape": {
+			"cube": "Cubo",
+			"cuboid": "Cuboide",
+			"sphere": "Esfera",
+			"cylinder": "Cilíndro",
+			"ellipsoid": "Ellipsoid"
+		},
+		"type": {
+			"biome": "Bioma",
+			"cleanentities": "Limpiar Entidades",
+			"clean": "Limpiar",
+			"drain": "Drenar",
+			"expand": "Expandir",
+			"fill": "Rellenar",
+			"flattenall": "Aplanar todo",
+			"flatten": "Aplanar",
+			"layer": "Capa",
+			"leafblower": "Soplador de hojas",
+			"melt": "Derretir",
+			"overlay": "Superponer",
+			"replaceall": "Reemplazar todo",
+			"replace": "Reemplazar",
+			"snowcone": "Cono de nieve",
+			"toplayer": "Capa superior",
+			"tree": "Árbol",
+			"regenerate": "Regenerar",
+			"freeze": "Congelar",
+			"warm": "Calentar",
+			"heat": "Hervir",
+			"smooth": "Smooth",
+			"replacetarget": "Replace Target",
+			"plant": "Plant"
+		}
+	}
+}
